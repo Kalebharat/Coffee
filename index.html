@@ -2,10 +2,595 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        h1,h2,h3{
+            font-family: 'Dancing Script', cursive;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+          .all-content{
+            background: #f7f5f7;
+          }
+          html::-webkit-scrollbar-track{
+            background: transparent;
+          }
+          html::-webkit-scrollbar-thumb{
+            background: #b2744c;
+            border-radius: 10px;
+          }
+          html::-webkit-scrollbar{
+            will-change: 10px;
+          }
+          #navbar{
+            background-color: #b2744c;
+          }
+          #logo img{
+            border-radius: 10px;
+            margin-left: 40px;
+          }
+          .nav-item .nav-link{
+           color: black;
+            margin-right: 10px;
+            font-weight: bold;
+            transition: 0.5s;
+          }
+          .nav-item .nav-link:hover{
+            background: #f7f5f7;
+            border-radius: 5px;
+            color: black;
+          }
+          .carousel-item img{
+            width: 100%;
+            height: 550px;
+          }
+          .card img{
+            width: 100%;
+            height: 250px;
+          }
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <p>I am bharat kale</p>
+<body data-spy="scroll" data-bs-target=".navbar" data-offset="100" >
+    <div class="all-content">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" id="logo"><img src="omg/img/g1.jpg" alt="" style="width: 250px; height: 80px;"></a>
+              <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#product">Product</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Cappuccino coffee</a></li>
+                      <li><a class="dropdown-item" href="#">Americano coffee</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Espresso coffee</a></li>
+                      <li><a class="dropdown-item" href="#">Latte coffee</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section id="home">
+    <div class="content">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="omg/img/g2.avif" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h2>Start Your Day with a</h2>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button class="btn btn-outline-danger">Shop Now</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="omg/img/g3.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h2>Start Your Day with a</h2>
+                  <p>Some representative placeholder content for the second slide.</p>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <button class="btn btn-outline-success">Shop Now</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="omg/img/logo3.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h2>Start Your Day with a</h2>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button class="btn btn-outline-warning">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>    
+    </section>
+
+    <section id="about">
+        <div class="container py-5">
+            <h1 class="text-center">About <span class="text-primary">Me</span></h1>
+            <hr class="w-25 m-auto">
+            <div class="row py-4">
+                <div class="col-md-6">
+                    <div class="card">
+               <img src="omg/img/g5.jpg" alt="" class="img-fluid">
+               </div>
+                </div>
+                <div class="col-md-6">
+                    <h1>What Makes Our Coffee Special?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repudiandae maiores officia laborum, <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum magnam expedita! Sunt corporis voluptatum, inventore expedita hic consectetur praesentium?</p>
+                    <button class="btn btn-outline-danger w-50">Learn More..</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="top-card py-5">
+        <div class="container">
+            <h1 class="text-center">Top <span class="text-primary">Categories</span></h1>
+            <hr class="w-25 m-auto">
+            <h1 class="text-center"></h1>
+            <div class="row py-4">
+                <div class="col-md-4">
+               <div class="card">
+                <img src="omg/img/g8.jpg" alt="">
+               </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                     <img src="omg/img/g7.jpg!d" alt="">
+                    </div>
+                     </div>
+
+                     <div class="col-md-4">
+                        <div class="card">
+                         <img src="omg/img/g6.jpg" alt="">
+                        </div>
+                         </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container py-5">
+         <h1 class="text-center">Menu <span class="text-primary">Cards</span></h1>
+         <hr class="w-25 m-auto">
+         <div class="row py-4">
+            <div class="col-md-3 py-4">
+                <div class="card">
+                <img src="omg/img/g10.jpeg" alt="" class="img-fluid">
+                <div class="card-body">
+                    <h4 class="text-center">Macchiato</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repudiandae.</p>
+                    <div class="text-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">$99 <strike class="text-end">$100</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 py-4">
+                <div class="card">
+                <img src="omg/img/j4.jpg" alt="" class="img-fluid">
+                <div class="card-body">
+                    <h4 class="text-center">Ristretto</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repudiandae.</p>
+                    <div class="text-center">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                    <p class="text-center">$99 <strike>$170</strike><span class="fa-solid fa-cart-shopping"></span></p>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 py-4">
+                <div class="card">
+                <img src="omg/img/g8.jpg" alt="" class="img-fluid">
+                <div class="card-body">
+                    <h4 class="text-center">Cafe'Latte</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repudiandae.</p>
+                    <div class="text-center">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                    <p class="text-center">$99 <strike>$160</strike><span class="fa-solid fa-cart-shopping"></span></p>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 py-4">
+                <div class="card">
+                <img src="omg/img/g7.jpg!d" alt="" class="img-fluid">
+                <div class="card-body">
+                    <h4 class="text-center">Flat White</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repudiandae.</p>
+                    <div class="text-center">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                    <p class="text-center">$99 <strike>$150</strike><span class="fa-solid fa-cart-shopping"></span></p>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                <img src="omg/img/j1.jpg" alt="" class="img-fluid">
+                <div class="card-body">
+                    <h4 class="text-center">Piccolo Latte</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repudiandae.</p>
+                    <div class="text-center">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                    <p class="text-center">$99 <strike>$140</strike><span class="fa-solid fa-cart-shopping"></span></p>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                <img src="omg/img/j2.webp" alt="" class="img-fluid">
+                <div class="card-body">
+                    <h4 class="text-center">Mocha</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repudiandae.</p>
+                    <div class="text-center">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                    <p class="text-center">$99 <strike>$130</strike><span class="fa-solid fa-cart-shopping"></span></p>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                <img src="omg/img/j3.jpeg" alt="" class="img-fluid">
+                <div class="card-body">
+                    <h4 class="text-center">Affogoto</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repudiandae.</p>
+                    <div class="text-center">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                    <p class="text-center">$99 <strike>$120</strike><span class="fa-solid fa-cart-shopping"></span></p>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                <img src="omg/img/g7.jpg!d" alt="" class="img-fluid">
+                <div class="card-body">
+                    <h4 class="text-center">Irish Coffee</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repudiandae.</p>
+                    <div class="text-center">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                    <p class="text-center">$99 <strike>$110</strike><span class="fa-solid fa-cart-shopping"></span></p>
+
+                </div>
+                </div>
+            </div>
+
+         </div>
+        </div>
+    </section>
+
+    <section id="product">
+      <div class="container py-5">
+        <h1 class="text-center">Coffee <span class="text-primary">Product</span></h1>
+        <hr class="w-25 m-auto">
+        <div class="row">
+         <div class="col-md-3 py-3">
+          <div class="card">
+            <img src="omg/img/k1.webp" alt="" class="img-fluid">
+            <div class="card-body text-center">
+              <h3>Arabic Coffee</h3>
+              <p>$120 <STrike>$150</STrike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 py-3">
+          <div class="card">
+            <img src="omg/img/k2.webp" alt="" class="img-fluid">
+            <div class="card-body text-center">
+              <h3>Cappu Coffee</h3>
+              <p>$250 <STrike>$350</STrike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 py-3">
+          <div class="card">
+            <img src="omg/img/k3.jpg" alt="" class="img-fluid">
+            <div class="card-body text-center">
+              <h3>Black Coffee</h3>
+              <p>$130 <STrike>$200</STrike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 py-3">
+          <div class="card">
+            <img src="omg/img/k4.webp" alt="" class="img-fluid">
+            <div class="card-body text-center">
+              <h3>Decaf Coffee</h3>
+              <p>$100 <STrike>$120</STrike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 py-3">
+          <div class="card">
+            <img src="omg/img/k5.jpeg" alt="" class="img-fluid">
+            <div class="card-body text-center">
+              <h3>Arabic Coffee</h3>
+              <p>$120 <STrike>$150</STrike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 py-3">
+          <div class="card">
+            <img src="omg/img/k6.avif" alt="" class="img-fluid">
+            <div class="card-body text-center">
+              <h3>Cappu Coffee</h3>
+              <p>$250 <STrike>$350</STrike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 py-3">
+          <div class="card">
+            <img src="omg/img/k7.jpg" alt="" class="img-fluid">
+            <div class="card-body text-center">
+              <h3>Black Coffee</h3>
+              <p>$130 <STrike>$200</STrike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 py-3">
+          <div class="card">
+            <img src="omg/img/k8.jpg" alt="" class="img-fluid">
+            <div class="card-body text-center">
+              <h3>Decaf Coffee</h3>
+              <p>$100 <STrike>$120</STrike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+  <div class="container py-5">
+   <h1 class="text-center">Our <span class="text-primary">Gallery</span></h1>
+   <hr class="w-25 m-auto">
+    <div class="row py-4">
+     <div class="col-md-4">
+      <div class="card">
+        <img src="omg/img/m1.avif" alt="" class="img-fluid">
+      </div>
+     </div>
+
+     <div class="col-md-4">
+      <div class="card">
+        <img src="omg/img/m2.jpg" alt="" class="img-fluid">
+      </div>
+     </div>
+
+     <div class="col-md-4">
+      <div class="card">
+        <img src="omg/img/m3.jpg" alt="" class="img-fluid">
+      </div>
+     </div>
+
+     <div class="col-md-4 py-4">
+      <div class="card">
+        <img src="omg/img/m4.webp" alt="" class="img-fluid">
+      </div>
+     </div>
+
+     <div class="col-md-4 py-4">
+      <div class="card">
+        <img src="omg/img/m5.jpg" alt="" class="img-fluid">
+      </div>
+     </div>
+
+     <div class="col-md-4 py-4">
+      <div class="card">
+        <img src="omg/img/m6.jpg" alt="" class="img-fluid">
+      </div>
+     </div>
+
+    </div>
+  </div>
+    </section>
+
+    <section id="contact">
+      <div class="container py-5">
+        <h1 class="text-center">Contact <span class="text-primary">Us</span></h1>
+        <hr class="w-25 m-auto">
+        <div class="row py-4">
+          <div class="col-md-7">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ab voluptatem aliquid architecto cum illum!</p>
+            <br>Lorem ipsum dolor sit amet.
+            <div class="form">
+            <input type="text" class="form-control mb-3 mt-3" placeholder=" Enter Name">
+            <input type="email" class="form-control mb-3" placeholder=" Enter Email">
+            <input type="number" class="form-control mb-3" placeholder=" Enter Number">
+            <button class="btn btn-outline-success w-50">Send Message</button>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <h1>INfo</h1>
+            <p><i class="fa-solid fa-envelope"></i>bharatkale036@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+929 4239 44840</p>
+            <p><i class="fa-solid fa-building-colums"></i>Bharat kale india</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo possimus porro sapiente, quibusdam quae ducimus debitis numquam fuga molestiae.</p>
+ 
+          </div>
+        </div>
+        <div class="row bg-info text-white mt-3 p-4">
+          <div class="col-md-4">
+            <h1>Bootstrap</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor suscipit quisquam voluptatum tenetur eaque tempora eligendi non inventore voluptatem aspernatur? Harum, </p>
+          </div>
+          <div class="col-md-2">
+            <a href="#">Projects</a>
+            <li>Bootsrap 5</li>
+            <li>Bootsrap 4</li>
+            <li>Icons</li>
+            <li>RFS</li>
+            <li>npm starter</li>
+        </div>
+        <div class="col-md-2">
+        <a href="#">Community</a>
+        <li>Issues</li>
+        <li>Discussions</li>
+        <li>Corpoate Sponsors</li>
+        <li>Open Collective</li>
+        <li>stack overflow</li>
+        </div>
+          <div class="col-md-2">
+           <h2><i>Product</i></h2>
+           <li>Public</li>
+           <li>Cost</li>
+           <li>Project</li>
+           <li>Management</li>
+          </div>
+          <div class="col-md-2">
+            <a href="#">Links</a>
+            <li>home</li>
+            <li>Docs</li>
+            <li>Example</li>
+            <li>Themes</li>
+            <li>Blog</li>
+        </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
